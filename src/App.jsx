@@ -9,6 +9,7 @@ function App() {
     <>
       <div className="bg-primary h-screen w-screen">
         <Header></Header>
+        <Home/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUS" element={<AboutUS />} />
