@@ -1,6 +1,6 @@
-
-import { AboutUS } from "./components/Pages/AboutUS"; // Importa AboutUS
-import { ContactUS } from "./components/Pages/ContactUS"; // Importa ContactUS
+import { Home } from "./components/pages/Home";
+import { AboutUS } from "./components/pages/AboutUS"; // Importa AboutUS
+import { ContactUS } from "./components/pages/ContactUS"; // Importa ContactUS
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Layouts/Header";
 
