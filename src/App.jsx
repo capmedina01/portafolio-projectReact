@@ -1,4 +1,4 @@
-import { Home } from "./components/Pages/Home";
+
 import { AboutUS } from "./components/Pages/AboutUS"; // Importa AboutUS
 import { ContactUS } from "./components/Pages/ContactUS"; // Importa ContactUS
 import { Route, Routes } from "react-router-dom";
@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="bg-primary h-screen w-screen">
         <Header></Header>
-        <Home/>
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUS" element={<AboutUS />} />
