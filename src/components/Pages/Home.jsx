@@ -6,19 +6,36 @@ import profilehome from "../../assets/img/developer.jpg"
 
 export const Home = () => {
   return (
-    <div className='w-screen'> 
-      <img src={BGhome} alt="fondo" />
-      <img src={profilehome} alt='perfil' className='absolute left-[60%] top-[250px]'/>
-      <div className='flex-grow justify-around absolute left-[10%] top-[80%] w-[600px] h-[250px] text-white text-[32px]'>
-        <h2>Hola!</h2>
-        <p>
-           Soy Carlos Andres Perdomo Medina <br />
-           tecnólogo y estudiante del SENA 
-           en Análisis y Desarrollo de Software
-       
-        </p>
-      </div>
+    <div className="relative w-full min-h-screen flex items-center justify-center">
+      
+      {/* Imagen de fondo */}
+      <img 
+        src={BGhome} 
+        alt="fondo" 
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
 
+      {/* Contenedor del contenido */}
+      <div className="relative flex items-center justify-between w-full max-w-6xl px-10 z-10">
+        
+        {/* Texto a la izquierda */}
+        <div className="text-white text-left max-w-lg">
+          <h2 className="text-4xl sm:text-5xl font-bold">Hola!</h2>
+          <p className="text-lg sm:text-xl mt-4">
+            Soy <span className="font-semibold">Carlos Andres Perdomo Medina</span> <br />
+            Tecnólogo y estudiante del SENA en Análisis y Desarrollo de Software.
+          </p>
+        </div>
+
+        {/* Imagen de perfil a la derecha */}
+        <img 
+          src={profilehome} 
+          alt="perfil" 
+          className="w-[250px] sm:w-[300px] md:w-[350px] rounded-full shadow-lg"
+        />
+
+      </div>
     </div>
-  )
+  );
 }
+
